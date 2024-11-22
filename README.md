@@ -30,7 +30,7 @@
     <ol>
         <li>
             <strong>Adım:</strong> Repoyu klonlayın.
-            <pre>git clone https://github.com/username/GoogleIPBlacklistController.git </pre>
+            <pre>git clone https://github.com/FetihAkgun/GoogleIPBlacklistController.git </pre>
              <pre>cd GoogleIPBlacklistController</pre>
         </li>
         <li>
