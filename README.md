@@ -30,10 +30,8 @@
     <ol>
         <li>
             <strong>Adım:</strong> Repoyu klonlayın.
-            <pre>
-                git clone https://github.com/username/GoogleIPBlacklistController.git
-                cd GoogleIPBlacklistController
-            </pre>
+            <pre>git clone https://github.com/username/GoogleIPBlacklistController.git </pre>
+             <pre>cd GoogleIPBlacklistController</pre>
         </li>
         <li>
             <strong>Adım:</strong> Laravel uygulamanızdaki <code>Http/Controllers</code> klasörüne 
@@ -41,9 +39,7 @@
         </li>
         <li>
             <strong>Adım:</strong> Aşağıdaki route'u tanımlayın:
-            <pre>
-                Route::get('/google-ip-blacklist', [GoogleIPBlacklistController::class, 'addGoogleIpsToBlacklist']);
-            </pre>
+            <pre>Route::get('/google-ip-blacklist', [GoogleIPBlacklistController::class, 'addGoogleIpsToBlacklist']);</pre>
         </li>
         <li>
             <strong>Adım:</strong> IP doğrulama işlemini başlatmak için tarayıcıdan veya API istemcisinden ilgili endpoint'i çağırın:
