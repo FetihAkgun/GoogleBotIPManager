@@ -4,6 +4,7 @@ Bu controller, RDNS (Reverse DNS) sorgularını kullanarak Google'a ait IP adres
 
 Özellikler:
 Google IP Listesi Çekme:
+
 Google'ın resmi JSON dosyasından IP adreslerini otomatik olarak alır.
 
 Subnet Hesaplama:
@@ -36,16 +37,21 @@ Kurulum ve Kullanım:
 1 Adım: Repoyu klonlayın.
 
 git clone https://github.com/FetihAkgun/GoogleIPBlacklistController.git
+
 cd GoogleIPBlacklistController
+
 2.Adım: Laravel uygulamanızdaki Http/Controllers klasörüne GoogleIPBlacklistController dosyasını ekleyin.
 
 3.Adım: Aşağıdaki route'u tanımlayın:
 
 Route::get('/google-ip-blacklist', [GoogleIPBlacklistController::class, 'addGoogleIpsToBlacklist']);
+
 4.Adım: IP doğrulama işlemini başlatmak için tarayıcıdan veya API istemcisinden ilgili endpoint'i çağırın:
 
 http://your-domain.com/google-ip-blacklist
+
 Örnek Çalışma Çıktısı:
+
 Başarılı bir çalıştırma sonunda aşağıdaki gibi bir JSON çıktısı alabilirsiniz:
 
 {
